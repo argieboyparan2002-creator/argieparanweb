@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Paran web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Custom cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <header class="header">
+      <a href="#home" class="logo">Giee<span>.</span></a>
+
+      <nav class="navbar">
+        <a href="#home" class="active">
+          <i class="bx bx-home-alt"></i>
+          <span>Home</span>
+        </a>
+        <a href="#about">
+          <i class="bx bx-user"></i>
+          <span>About</span>
+        </a>
+        <a href="#services">
+          <i class="bx bx-code-curly"></i>
+          <span>Skills</span>
+        </a>
+        <a href="#education">
+          <i class="bx bx-book-open"></i>
+          <span>Education</span>
+        </a>
+        <a href="#contact">
+          <i class="bx bx-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="bx bx-moon" id="darkMode-icon" title="Toggle dark mode"></div>
+        <a href="myresume.png" class="nav-cv-btn" download="myresume.png" title="Download CV">
+          <i class="bx bx-download"></i>
+          <span>CV</span>
+        </a>
+      </div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- scroll progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I am </h3>
+        <h1><span class="multiple-text"></span></h1>
+        <h2>
+          Got an idea for a website? Let’s build it together and make something amazing.
+        </h2>
+
+        <a href="myresume.png" class="btn" download="myresume.png"
+          >Download CV</a
+        >
+      </div>
+
+      <div class="home-right">
+        <div class="wheel">
+
+          <!-- Outer dashed ring (spins slowly) -->
+          <div class="wheel-ring"></div>
+
+          <!-- Center photo (stays still) -->
+          <div class="wheel-center">
+            <img src="epoypic.jpeg" alt="Argie Paran" />
+          </div>
+
+          <!-- Orbit track: -->
+          <div class="wheel-orbit">
+            <div class="wheel-node wheel-node--1">
+              <i class="bx bx-code-alt"></i>
+              <span>Web Developer</span>
+            </div>
+            <div class="wheel-node wheel-node--2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+fill="currentColor" viewBox="0 0 24 24">
+<path d="M18 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-4.33L22 17V7l-4 3.33zm-2 12H4V6h12z"></path>
+</svg>
+              <span>Video Editor</span>
+            </div>
+            <div class="wheel-node wheel-node--3">
+              <i class="bx bx-palette"></i>
+              <span>Web Designer</span>
+            </div>
+            <div class="wheel-node wheel-node--4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 8c-2.17 0-4 1.83-4 4s1.83 4 4 4 4-1.83 4-4-1.83-4-4-4m0 6c-1.07 0-2-.93-2-2s.93-2 2-2 2 .93 2 2-.93 2-2 2"></path><path d="M20 5h-2.59L14.7 2.29a1 1 0 0 0-.71-.29h-4c-.27 0-.52.11-.71.29L6.57 5H3.98c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2Zm0 13H4V7h3c.27 0 .52-.11.71-.29L10.42 4h3.17l2.71 2.71c.19.19.44.29.71.29h3v11Z"></path>
+</svg>
+              <span>Photographer</span>
+            </div>
+            <div class="wheel-node wheel-node--5">
+              <i class="bx bx-video-recording"></i>
+              <span>Content Creator</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/about.png" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Hi, I'm Here To Help Your Company!</h3>
+        <p>
+          I want to give you every reason to hire me beyond my technical studies, I am an exceptionally hard worker with a proactive "can do" attitude. I am a lifelong learner who stays ahead of industry trends, and I take great pride in being a reliable team player who is always ready to jump in and help others.
+          <span class="more-text hidden" data-readmore-id="1">
+            <br /><br />
+           Hi! I’m Argie, an IT student at Opol Community College with a passion for Web Development and Web Design. I am confident in my ability to contribute effectively to your IT department and am eager to bring my skills to your team. My goal is to help you achieve your objectives through innovation, reliability, and a strong work ethic. I am looking for an opportunity to grow alongside your team and make a meaningful impact. Thank you for your time and consideration I hope we can collaborate soon!
+          </span>
+        </p>
+        <a href="#" class="read-more btn" data-readmore-id="1">Read More</a>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Skills</span></h2>
+
+      <div class="services-container">
+
+        <!-- ── Web Development ── -->
+        <div class="services-box" id="skill-webdev">
+          <i class="bx bxl-css3"></i>
+          <h3>Web Development</h3>
+          <p>
+            Building fast, responsive websites from scratch using HTML5, CSS3
+            and JavaScript. Currently expanding into React and working with
+            REST APIs, Salesforce APEX and backend integrations during my
+            internship.
+          </p>
+          <button class="btn skill-toggle" data-target="works-webdev">
+            View My Work <i class="bx bx-chevron-down"></i>
+          </button>
+
+          <!-- Work examples panel -->
+          <div class="skill-works hidden" id="works-webdev">
+            <div class="works-grid">
+              <div class="work-card">
+                <div class="work-img-placeholder design-placeholder">
+                  <img src="web1.png" alt="Personal Website 1" />
+                </div>
+                <div class="work-info">
+                  <h4>Personal Website 1</h4>
+                  <p>Portfolio site — built with HTML, CSS &amp; JS.</p>
+                </div>
+              </div>
+              <div class="work-card">
+                <div class="work-img-placeholder design-placeholder">
+                  <img src="web2.png" alt="Personal Website 2" />
+                </div>
+                <div class="work-info">
+                  <h4>Personal Website 2</h4>
+                  <p>Responsive personal portfolio with modern layout.</p>
+                </div>
+              </div>
+              <div class="work-card">
+                <div class="work-img-placeholder design-placeholder">
+                  <img src="web3.png" alt="Python Project" />
+                </div>
+                <div class="work-info">
+                  <h4>Python Project</h4>
+                  <p>Library System that can track books records that are borrowed. It can also manage view all available books or not.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Web Designing ── -->
+        <div class="services-box" id="skill-webdesign">
+          <i class="bx bx-palette"></i>
+          <h3>Web Designing</h3>
+          <p>
+            Crafting clean, modern UI layouts with a focus on user experience.
+            Comfortable with Figma, wireframing, colour theory and responsive
+            design principles.
+          </p>
+          <button class="btn skill-toggle" data-target="works-webdesign">
+            View My Work <i class="bx bx-chevron-down"></i>
+          </button>
+
+          <!-- Work examples panel -->
+          <div class="skill-works hidden" id="works-webdesign">
+            <div class="works-grid">
+              <div class="work-card">
+                <div class="work-img-placeholder design-placeholder">
+                  <img src="design1.png" alt="Design 1" />
+                </div>
+                <div class="work-info">
+                  <h4>Design 1</h4>
+                  <p>Landing page concept — dark theme with green accents.</p>
+                </div>
+              </div>
+              <div class="work-card">
+                <div class="work-img-placeholder design-placeholder">
+                  <img src="design2.png" alt="Design 2" />
+                </div>
+                <div class="work-info">
+                  <h4>Design 2</h4>
+                  <p>Dashboard UI — clean layout with data visualisation.</p>
+                </div>
+              </div>
+              <div class="work-card">
+                <div class="work-img-placeholder design-placeholder">
+                  <img src="design3.png" alt="Design 3" />
+                </div>
+                <div class="work-info">
+                  <h4>Design 3</h4>
+                  <p>Mobile-first e-commerce product page.</p>
+                </div>
+              </div>
+              <div class="work-card">
+                <div class="work-img-placeholder design-placeholder">
+                  <img src="design4.png" alt="Design 4" />
+                </div>
+                <div class="work-info">
+                  <h4>Design 4</h4>
+                  <p>Portfolio school redesign concept with animated hero section.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Photography ── -->
+        <div class="services-box" id="skill-photography">
+          <i class="bx bx-camera"></i>
+          <h3>Photography</h3>
+          <p>
+            Capturing moments with a creative eye. Experienced in portrait,
+            landscape and event photography, with post-processing skills in
+            Lightroom and photo editing tools.
+          </p>
+          <button class="btn skill-toggle" data-target="works-photography">
+            View My Work <i class="bx bx-chevron-down"></i>
+          </button>
+
+          <!-- Work examples panel -->
+          <div class="skill-works hidden" id="works-photography">
+            <div class="works-grid">
+              <div class="work-card">
+                <div class="work-img-placeholder design-placeholder">
+                  <img src="photog1.png" alt="Photo 1" />
+                </div>
+                <div class="work-info">
+                  <h4>Photo 1</h4>
+                  <p>landscape shot — natural lighting, outdoor setting for a couple.</p>
+                </div>
+              </div>
+              <div class="work-card">
+                <div class="work-img-placeholder design-placeholder">
+                  <img src="photo2.png" alt="Photo 2" />
+                </div>
+                <div class="work-info">
+                  <h4>Photo 2</h4>
+                  <p>Landscape capture — golden hour composition.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education section -->
+    <section class="education" id="education">
+      <h2 class="heading">My <span>Education</span></h2>
+
+      <div class="education-timeline">
+
+        <!-- Elementary -->
+        <div class="edu-card">
+          <div class="edu-icon">
+            <i class="bx bxs-school"></i>
+          </div>
+          <div class="edu-content">
+            <span class="edu-level">Elementary</span>
+            <h3>Bugo Central School</h3>
+            <div class="edu-badge honor">
+              <i class="bx bxs-medal"></i> Graduated with Honors
+            </div>
+            <div class="edu-achievements">
+              <div class="edu-achievement">
+                <i class="bx bx-math"></i>
+                <span>Best in Mathematics</span>
+              </div>
+              <div class="edu-achievement">
+                <i class="bx bx-atom"></i>
+                <span>Best in Science</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- High School -->
+        <div class="edu-card">
+          <div class="edu-icon">
+            <i class="bx bxs-graduation"></i>
+          </div>
+          <div class="edu-content">
+            <span class="edu-level">High School</span>
+            <h3>Bugo National High School</h3>
+            <div class="edu-badge honor">
+              <i class="bx bxs-medal"></i> Graduated with Honors
+            </div>
+            <div class="edu-achievements">
+              <div class="edu-achievement">
+                <i class="bx bxs-trophy"></i>
+                <span>Quiz Bee Winner</span>
+              </div>
+              <div class="edu-achievement">
+                <i class="bx bxs-calculator"></i>
+                <span>Math Contest Winner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Senior High -->
+        <div class="edu-card">
+          <div class="edu-icon">
+            <i class="bx bxs-book-reader"></i>
+          </div>
+          <div class="edu-content">
+            <span class="edu-level">Senior High School</span>
+            <h3>PHINMA Cagayan de Oro College</h3>
+          </div>
+        </div>
+
+        <!-- College -->
+        <div class="edu-card">
+          <div class="edu-icon">
+            <i class="bx bxs-buildings"></i>
+          </div>
+          <div class="edu-content">
+            <span class="edu-level">College</span>
+            <h3>Opol Community College</h3>
+            <p class="edu-course">Bachelor of Science in Information Technology</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="https://formspree.io/f/mzdoyber" method="POST">
+        <div class="input-box">
+          <input
+            type="text"
+            name="Name"
+            id="input-name"
+            placeholder="Full Name (optional)"
+            aria-label="Full Name"
+            title="Full Name"
+          />
+          <input
+            type="email"
+            name="Email"
+            id="input-email"
+            placeholder="Email Address*"
+            aria-label="Email Address"
+            title="Email Address"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="tel"
+            name="Phone"
+            id="input-phone"
+            placeholder="Phone Number (optional)"
+            aria-label="Phone Number"
+            title="Phone Number"
+          />
+          <input
+            type="text"
+            name="Subject"
+            id="input-subject"
+            placeholder="Email Subject*"
+            aria-label="Email Subject"
+            title="Email Subject"
+            required
+          />
+        </div>
+        <textarea
+          name="Message"
+          id="input-message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          aria-label="Your Message"
+          title="Your Message"
+        ></textarea>
+        <input
+          type="submit"
+          value="Send Message"
+          class="btn"
+          aria-label="Send Message"
+          title="Send Message"
+        />
+      </form>
+    </section>
+
+    <!-- footer section design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2026 by Paran Argie. | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-social">
+        <a href="mailto:argieboyparan2002@gmail.com" title="Email">
+          <i class="bx bx-envelope"></i>
+        </a>
+        <a href="https://github.com/users/argieboyparan2002-creator/projects/1/views/1" target="_blank" rel="noopener noreferrer" title="GitHub">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.instagram.com/gieeeboyr/" target="_blank" rel="noopener noreferrer" title="Instagram">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/argie-boy-paran-2b774b334/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home" title="Back to top"><i class="bx bxs-up-arrow-circle"></i></a>
+      </div>
+    </footer>
+
+    <!-- Lightbox overlay -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+        <i class="bx bx-x"></i>
+      </button>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightboxImg" />
+        <p id="lightboxCaption"></p>
+      </div>
+    </div>
+
+    <!-- Brightness overlay -->
+    <div id="brightness-overlay"></div>
+
+    <!-- Brightness panel -->
+    <div class="brightness-panel">
+      <div class="brightness-popup" id="brightnessPopup">
+        <label><i class="bx bx-sun"></i> Page Brightness</label>
+        <input type="range" class="brightness-slider" id="brightnessSlider" min="20" max="100" value="100" />
+        <div class="brightness-value" id="brightnessValue">100%</div>
+      </div>
+      <button class="brightness-toggle-btn" id="brightnessToggleBtn" title="Adjust brightness">
+        <i class="bx bx-sun"></i>
+      </button>
+    </div>
+
+    <!-- typed.js -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <!-- swiper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>
